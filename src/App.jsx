@@ -1,35 +1,20 @@
 import React, { useState } from 'react'
 
 function App() {
-
-
-  const x = [{name:'sohel hussain'}]
-
-  const y = x.map((item, index)=> {
-    return item
-  })
-  // console.log(y);
-
-
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
-
-  const handleClick = () => {
-    console.log(time);
+  const [value, setValue] = useState('');
+  const formHndler = (e) => {
+    e.preventDefault();
   }
-  
-  setInterval(e => {
-    setTime(new Date().toLocaleTimeString())
-  },1000)
+
+  const [error, setError] = useState(true);
 
   return (
-    <div>
-      <h1>Hello World</h1>
-      <p>This is a React Class Component</p>
-      {/* <h1>{x.map(item => item)}</h1> */}
-
-      <h2>{time}</h2>
-      <button onClick={handleClick}>click</button>
-      <br />
+    <div className='w-screen h-screen bg-gray-100'>
+      <form>
+        <input onInput={e => e.target.value.length < 5 ? setError(true) : setError(false)} onChange={e => setValue(e.target.value)} name='name' type='text' placeholder='Enter your name' value={value} />
+        {error && <p>Please enter your name</p>}
+        <button onClick={formHndler}>Submit</button>
+      </form>
     </div>
   )
 }
