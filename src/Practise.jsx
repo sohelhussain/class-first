@@ -18,6 +18,8 @@ function Practise() {
         <input type="radio" name="female" defaultValue='female' checked={gender === 'female' ? true : false} onChange={e => setGender(e.target.value)}/>
         <input type="radio" name="male" defaultValue='male' checked={gender === 'male' ? true : false} onChange={e => setGender(e.target.value)}/>
 
+        <input type="checkbox" name="not-first" onChange={e => console.log(e)}/>
+
             <input type="submit" value="Submit" />
         </form>
     </div>
