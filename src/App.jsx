@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Forms from './Forms'
 import Practise from './Practise'
 import Reacthook from './Reacthook'
+import Child from './Components/Child'
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
       {/* <Practise /> */}
       <Reacthook />
       <button></button>
+      <Child info='nothing'>
+        <h1>this is child</h1>
+      </Child>
     </div>
   )
 }
