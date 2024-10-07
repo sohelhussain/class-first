@@ -1,0 +1,55 @@
+1) first install the react-router-dom package
+
+    npm install react-router-dom
+
+2) then import the package in the main.jsx file
+
+    import { BrowserRouter } from 'react-router-dom'
+
+3) now we need to cover hole app.jsx into the BrowserRouter
+
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+
+now we need to create a router file
+
+    create a new file called router.jsx
+
+import the react-router-dom package
+
+     import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+now we need to create a routes file
+
+create a new file called routes.jsx
+
+import the react-router-dom package
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+now we need to create a route file
+
+create a new file called route.jsx
+
+import the react-router-dom package
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+now we need to create a home file
+
+create a new file called home.jsx
+
+import the react-router-dom package
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+now we need to create a about file
+
+create a new file called about.jsx
+
+import the react-router-dom package
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+now we need to create a contact file
